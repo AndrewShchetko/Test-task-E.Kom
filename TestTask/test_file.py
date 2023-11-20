@@ -3,25 +3,6 @@ import json
 import unittest
 
 
-# url = "http://127.0.0.1:8000/get_form/"
-# post_data = {
-#     "Contact Information": {"mail": "android@mail.ru", "date": "2022-11-22", "tel": "+71112223344"},
-#     "SMS Form": {"username": "user1", "phone number": "+7 111 222 11 22"},
-#     "Happy Birthday Form": {"date of birth": "2022-11-11", "phone number": "+7 1231232233"},
-#     "Personal Details": {"username": "user2", "birthday": "12.01.2002"},
-#     "Feedback Form": {"username": "user3", "mail": "email@example.com"},
-#     "Personal Information": {"username": "user4", "birthday": "20.12.2010", "phone": "+77777777777", "email": "exampleof@email.ru"},
-#     "{'user': 'text', 'msg': 'text'}": {"user": "user5", "msg": "message from user"},
-#     "{'date of birth': 'date', 'phone number': 'text'}": {"date of birth": "2022-11-11", "phone number": "+7 111 222 333 44"},
-#     "{'date': 'text', 'mail': 'email', 'tel': 'phone'}": {"date": "today", "mail": "mail@gmail.com", "tel": "+71112223344"}
-# }
-#
-# for key, value in post_data.items():
-#     response = requests.post(url, data=json.dumps(value))
-#     response_data = str(response.json()['Response data'])
-#     print(response_data)
-
-
 class TestFormsAPI(unittest.TestCase):
     def setUp(self):
         self.base_url = "http://127.0.0.1:8000"
